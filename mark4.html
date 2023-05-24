@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark-4</title>
+    <link rel="stylesheet" href="/learnCSS/style.css">
+</head>
+
+<body>
+
+
+
+    <div id="background">
+
+        <!-- -------------------------   the navigation ----------------- -->
+        <div id="navBar">
+
+            <div class="section-1">
+                <button id="menu" onclick="" class="section-1-cont">
+                    <div class="rod"></div>
+                    <div class="rod"></div>
+                    <div class="rod"></div>
+                </button>
+
+                <div><input type="image" src="../images/logo.png" alt="" id="logo" class="section-1-cont"></div>
+            </div>
+
+            <!-- another links -->
+            <div id="pages" class="section-2">
+
+                <a href="#">About</a>
+                <a href="#">Services</a>
+
+            </div>
+
+        </div>
+
+        <!-- -----------------------   the main content ----------------- -->
+
+        <div class="main">
+
+            <!-- he modes of matrix -->
+            <select name="modes" id="mode" class="main-heading">
+                <option value="Addition">Matrix Addition</option>
+                <option value="Subtraction">Matrix Subtraction</option>
+                <option value="Multiplication">Matrix Multiplication</option>
+                <option value="Determinant">Matrix Determinant</option>
+            </select>
+
+            <!-- order divition -->
+            <div id="order">
+
+                <h2 class="order-text" style="display: inline;">Order</h2>
+
+                <input type="number" id="row" class="order" placeholder="Row" onkeyup="rmove()">
+
+                <p class="order-text" style="display: inline;">x</p>
+
+                <input type="number" id="column" class="order" placeholder="Column" onkeyup="cmove()">
+
+                <button id="inputMat" class="enter-ans" onclick="inputMatForm()">Enter</button>
+            </div>
+
+            <br>
+
+            <!-- mat divition -->
+            <div id="inputDiv">
+                <div id="primary">
+                    <input type="number" name="p-constant" id="p-constant">
+                    <div id="primaryMat">
+
+                    </div>
+                </div>
+
+                <div id="operator-div">
+                    <input type="button" value="+" id="operator">
+                    
+                </div>
+
+                <div id="secondry">
+                    <input type="number" name="s-constant" id="s-constant">
+                    <div id="secondryMat">
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button class="enter-ans" onclick="answer()">Answer</button>
+            </div>
+            <br>
+
+            <div id="answerMat">
+
+            </div>
+
+        </div>
+
+        <!-- -----------------------   the Animation ----------------- -->
+
+    </div>
+
+
+</body>
+<!-- <script src="/JAVA SCRIPT FILES/mark3.js"></script> -->
+
+<!-- <script src="/JAVA SCRIPT FILES/mark3.1.js"></script> -->
+
+<!-- <script src="/JAVA SCRIPT FILES/mark3.2.js"></script> -->
+
+<!-- <script src="/JAVA SCRIPT FILES/mark3.3.js"></script> -->
+
+<script src="/JAVA SCRIPT FILES/mark4.js"></script>
+
+<script src="/JAVA SCRIPT FILES/dyncss.js"></script>
+
+</html>
