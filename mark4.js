@@ -160,9 +160,11 @@ function answer() {
             if (modes.value == "Addition") {
                 resultNul[i][j] = (pConstant * a[i][j]) + (sConstant * b[i][j]);
             }
+            // for subtraciton mode
             if (modes.value == "Subtraction") {
                 resultNul[i][j] = (pConstant * a[i][j]) - (sConstant * b[i][j]);
             }
+            
 
             // feeding result in answerMat
             let newMat = document.createElement("input");
@@ -178,5 +180,33 @@ function answer() {
         let br = document.createElement("br");
         answerMatObj.appendChild(br);
     }
+    
+    
+    //multiplication
+    if (modes.value == "Multiplication"){
+    
+    for(let i=0; i<row; i++){
+    
+        for(let j=0; j<row; j++){
+            let x =0;
+            for(let k=0; k<col; k++){
+                x+=(a[i][k]*b[k][j])
+            }
+            resultNul[i][j] =x;
+            let newMat = document.createElement("input");
+            newMat.type = 'number';
+            newMat.value = resultNul[i][j];
+            
+              // assigning class to new matrix
+            newMat.classList = 'ans-row-col_' + i + "" + j;
+            answerMatObj.appendChild(newMat);
 
+        }
+        // adding break line tag
+        let br = document.createElement("br");
+        answerMatObj.appendChild(br);
+        }
+        
+    }
+  
 }
