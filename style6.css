@@ -1,0 +1,226 @@
+/* ================    reseting the css     ====================  */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+/* ==================    setting root of css     ====================  */
+:root{
+    font-size: 10px;
+    --bg-col: rgb(4, 21, 53);
+    --border-col: cyan;
+    --text-col: white;
+    --bg-hover: rgb(178, 247, 247);
+}
+
+/* =============================    body css     ====================  */
+
+body{
+    background-color: var(--bg-col);
+}
+#background::before{
+    z-index: 1;
+    margin: 1rem;
+    background-color: var(--bg-col);
+    border: .2rem solid var(--border-col);
+    border-radius: 2rem;
+    box-shadow: 0 0 .5rem white;
+    min-height: 100vh;
+}
+
+/* =======================    navigation css     ====================  */
+#navBar{
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: .2rem solid var(--border-col);
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 .5rem white;
+    min-height: 10rem;
+}
+
+#navBar div{
+    margin: .5rem 0;
+}
+
+#logo{
+    width: 1rem;
+    height: 5rem;
+    box-shadow: 0 0 .5rem cyan;
+    border-radius: 50%;
+}
+
+#menu{
+    border: .2rem solid white;
+    height: 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem cyan;
+
+}
+
+#menu:hover{
+    background-color: var(--bg-hover);
+}
+
+#menu div:hover{
+    background-color: black;
+    box-shadow: 0 0 .5rem cyan;
+}
+
+#menu div{
+    width: 3rem;
+    height: .3rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin: .5rem;
+}
+
+.section-1-cont{
+    margin: 0 1rem;
+}
+
+.section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 a{
+    margin: 0 1rem;
+    font-size: 2rem;
+    text-shadow: 0 0 .5rem cyan;
+}
+
+/* =======================    Main css     ====================  */
+.main{
+    z-index: 1;
+    margin: 1rem;
+    padding: 1rem;
+    border: .2rem solid var(--border-col);
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100wh;
+}
+
+.main-heading{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: .2rem solid var(--border-col);
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem white;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.9rem;
+}
+
+
+.main-heading:hover{
+    background-color: var(--bg-hover);
+    color: black;
+    font-size: 2rem;
+    text-shadow: 0 0 .5rem cyan;
+}
+
+/* =======================    order css     ====================  */
+
+.order{
+    border: .2rem solid crimson;
+    border-radius: 2rem;
+    padding: 0 1rem;
+    width: 10rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.order-text{
+    font-size: 2rem;
+}
+
+#s-row,#s-column{
+    display: none;
+}
+
+/* ================    primary secondry mat css     =================  */
+
+#primary,#secondry{
+    display: flex;
+    align-items: center;
+}
+
+
+#primaryMat{
+    border: .1rem solid white;
+    border-radius: 2rem;
+    background: rgba(255, 238, 0, 0.158);
+    margin: 1rem;
+}
+#secondryMat{
+    border: .1rem solid white;
+    background: rgba(0, 255, 162, 0.158);
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+/* =====================    common input css     ====================  */
+
+input{
+    width: 5rem;
+    border: .2rem solid white;
+    margin: .5rem;
+    text-align: center;
+    border-radius: 5rem;
+    max-height: 5rem;
+    min-width: 9rem;
+    font-size: 3rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+/* =====================    enter button css     ====================  */
+
+.enter-ans{
+    box-shadow: 0 0 .5rem white;
+    border: .2rem solid green;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+}
+
+.enter-ans:hover{
+    background-color: var(--bg-hover);
+    color: black;
+    text-shadow: 0 0 .5rem cyan;
+}
+
+/* =====================    modes button css     ====================  */
+
+#operator{
+    box-shadow: 0 0 1rem white;
+    border: .1rem solid white;
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 5rem;
+    background-color: rgba(255, 255, 255, 0.261);
+}
+
+/* ===================== Background animation ====================  */
+
+
+
